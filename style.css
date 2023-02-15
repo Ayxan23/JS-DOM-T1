@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.task{
+  display: flex;
+  gap: 25px;
+}
+.table_div{
+  flex: 1;
+  margin-top: 50px;
+}
+.form_input{
+  flex: 1;
+  margin-top: 50px;
+}
+/* Form */
+.addCar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.btn_sub {
+  margin-top: 20px;
+  padding: 12px 40px;
+  background-color: rgb(0, 188, 69);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+}
+
+.btn_sub:hover {
+  cursor: pointer;
+  background-color: rgb(0, 159, 58);
+}
+
+input {
+  font-size: 16px;
+  font-weight: 600;
+  color: #727484;
+  border: 2px solid #e1e1e1;
+  outline: none;
+  padding: 12px 23px;
+  border-radius: 5px;
+}
+
+.check_leb {
+  font-size: 16px;
+  color: #878a9d;
+}
+
+input:focus {
+  color: rgb(0, 107, 39);
+  border: 2px solid rgb(0, 159, 58);
+  outline: none;
+  background-color: #d3ffec;
+}
+
+input::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  color: #878a9d;
+}
+#is_new {
+  accent-color: rgb(0, 159, 58);
+  width: 18px;
+  height: 18px;
+}
+
+.check_div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.exp_text {
+  color: rgb(255, 40, 40);
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* Table */
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+th,
+td {
+  border: 2px solid rgb(0, 93, 28);
+  padding: 10px;
+}
+
+th {
+  color: white;
+  background-color: rgb(0, 147, 69);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+td {
+  color: rgb(0, 46, 14);
+  font-weight: 500;
+  font-size: 16px;
+  background-color: rgb(209, 255, 230);
+}
+
+@media screen and (max-width:1000px ) {
+  .task{
+    flex-direction: column;
+    gap: 0px;
+  }
+}

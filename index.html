@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM and Function constructor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <section class="task">
+        <div class="form_input">
+          <form class="addCar">
+            <input type="text" id="brand" value="" placeholder="Brand" />
+            <input type="text" id="model" value="" placeholder="Model" />
+            <input type="number" id="year" value="" placeholder="Year" />
+            <input type="text" id="descr" value="" placeholder="Description" />
+            <div class="check_div">
+              <input type="checkbox" id="is_new" />
+              <label for="is_new" class="check_leb">New</label>
+            </div>
+          </form>
+          <button class="btn_sub" type="submit">Add</button>
+          <p class="exp_text"></p>
+        </div>
+        <div class="table_div">
+          <table class="table" >
+            <tr>
+              <th>Brand</th>
+              <th>Model</th>
+              <th>Year</th>
+              <th>Description</th>
+              <th>Is New</th>
+            </tr>
+            <tr>
+              <td>BMW</td>
+              <td>M5</td>
+              <td>2018</td>
+              <td>Best Car</td>
+              <td>Yes</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </div>
+    <script src="/main.js"></script>
+  </body>
+</html>
